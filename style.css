@@ -1,0 +1,158 @@
+body {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  outline: none;
+}
+
+.in {
+  display: block;
+  width: 100%;
+  display: flex;
+  padding: 20px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.in .over {
+  position: absolute !important;
+  background-color: #ffffff !important;
+  top: 0px;
+  right: 8% !important;
+  margin-top: -8px;
+  z-index: 982;
+  border-radius: 5px;
+  padding: 5px;
+  display: none;
+}
+
+.in .over::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 45%;
+  transform: rotate(45deg);
+  border-radius: 0px;
+  top: 81%;
+}
+
+.in i {
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: #d65a31;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.in input[type=text] {
+  border: 2px solid #393e46;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 40px;
+}
+
+.factor ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.factor ul li {
+  color: white;
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+  padding: 3px 0;
+  overflow: hidden;
+}
+
+.factor ul li i {
+  margin-right: 10px;
+}
+
+.factor ul li:last-child {
+  border: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: #d65a31e8;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 0;
+  transition: all 1s;
+}
+
+button:hover {
+  background-color: #d65a31;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+.m-auto .in {
+  background-color: #222831 !important;
+  margin-top: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 12px 28px -13px #212529;
+  margin-bottom: 25px;
+}
+
+.in input[type=text] {
+  border-width: 0px;
+  border-style: none;
+}
+
+.fa-times {
+  color: #c72c41d2;
+  position: relative;
+  animation: fadeout .8s forwards;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fa-check {
+  color: #29a19c;
+  position: relative;
+  animation: fade .6s forwards ease-out;
+}
+
+@keyframes fade {
+  from {
+    top: 35px;
+  }
+  to {
+    top: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
